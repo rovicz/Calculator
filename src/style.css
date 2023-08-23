@@ -1,97 +1,111 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Colors */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-hex { color: #127369; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-hex { color: #10403B; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-hex { color: #8AA6A3; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-hex { color: #4C5958; }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; } */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+/* Reset */
+
+html {
+  scroll-behavior: smooth;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+::selection {
+  color: #fff;
+  background: #0029f7;
 }
-a:hover {
-  color: #535bf2;
+
+::-moz-selection {
+  color: #fff;
+  background: #0029f7;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0029f7;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: Georgia, serif;
+  color: #fff;
+  background: #8aa6a3;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+* {
+  box-sizing: border-box;
 }
 
-#app {
-  max-width: 1280px;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 739px) {
+  .container {
+    flex-direction: column;
+    max-width: 360px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+/* Header */
+
+/* Header */
+
+.header {
+  background: #4c5958;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.header-item {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header-item ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header-item a {
+  box-shadow: inset 0 0 0 0 #fff;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.header-item a:hover {
+  box-shadow: inset 100px 0 0 0 #fff;
+  color: #000;
+  border-radius: 5px;
 }
