@@ -77,12 +77,10 @@ img {
 
 /* Header */
 
-/* Header */
-
 .header {
   background: #4c5958;
   padding: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .header-item {
@@ -108,4 +106,12 @@ img {
   box-shadow: inset 100px 0 0 0 #fff;
   color: #000;
   border-radius: 5px;
+}
+
+/* Calculator */
+
+.title {
+  font-size: 2.75em;
+  font-weight: bold;
+  text-align: center;
 }
