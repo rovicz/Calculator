@@ -115,3 +115,11 @@ img {
   font-weight: bold;
   text-align: center;
 }
+
+.calculator-body {
+  background: #fff;
+  width: 600px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 10px auto 0 auto;
+}
