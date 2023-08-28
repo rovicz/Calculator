@@ -24,7 +24,21 @@
   <section id="calculator">
     <h2 class="title">Calculator</h2>
 
-    <div class="container calculator-body"></div>
+    <div class="container calculator-body">
+      <form id="form">
+        <p>
+          <input type="number" id="num1" required>
+          <input type="number" id="num2" required>
+        </p>
+        <p>
+          <button id="summ">summ</button>
+          <button id="sub">substract</button>
+          <button id="multiply">multiply</button>
+          <button id="divide">divide</button>
+        </p>
+      </form>
+      <span id="result"></span>
+    </div>
   </section>
 
   <script type="module" src="./dist/main.js"></script>
