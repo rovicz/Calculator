@@ -10,6 +10,8 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 ::selection {
@@ -53,8 +55,12 @@ body {
   background: #8aa6a3;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -110,27 +116,10 @@ img {
 
 /* Calculator */
 
-.title {
-  font-size: 2.75em;
-  font-weight: bold;
-  text-align: center;
-}
-
-.calc-body {
-  background: #fff;
-  width: 600px;
-  height: 600px;
-  border-radius: 10px;
-  margin: 10px auto 0 auto;
-}
-
-span {
-  color: #000;
-  font-size: 1.25em;
-}
-
-.calc-body button {
-  width: 60px;
-  height: 60px;
-  background: #4c5958;
+.wrapper {
+  align-items: center;
+  display: flex;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
 }

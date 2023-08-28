@@ -18,28 +18,46 @@
       </div>
     </header>
 
-    <!-- Calculator Body -->
+    <!-- Calculator -->
 
-    <section id="calculator">
-      <h2 class="title">Calculator</h2>
+    <div class="wrapper">
+      <section class="screen">0</section>
 
-      <div class="container calc-body">
-        <form id="form">
-          <p>
-            <input type="number" id="num1" required />
-            <input type="number" id="num2" required />
-          </p>
-          <p>
-            <button id="summ">+</button>
-            <button id="sub">-</button>
-            <button id="multiply">×</button>
-            <button id="divide">÷</button>
-          </p>
-        </form>
-        <span id="result"></span>
-      </div>
-    </section>
+      <section class="calc-buttons">
+        <div class="calc-button-row">
+          <button class="calc-button double">C</button>
+          <button class="calc-button">&larr;</button>
+          <button class="calc-button">&divide;</button>
+        </div>
 
-    <script type="module" src="./dist/main.js"></script>
+        <div class="calc-button-row">
+          <button class="calc-button">7</button>
+          <button class="calc-button">8</button>
+          <button class="calc-button">9</button>
+          <button class="calc-button">&times;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">4</button>
+          <button class="calc-button">5</button>
+          <button class="calc-button">6</button>
+          <button class="calc-button">&minus;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">1</button>
+          <button class="calc-button">2</button>
+          <button class="calc-button">3</button>
+          <button class="calc-button">&plus;</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button">0</button>
+          <button class="calc-button">&equals;</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="./src/script.js"></script>
   </body>
 </html>
