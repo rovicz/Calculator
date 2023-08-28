@@ -116,7 +116,7 @@ img {
   text-align: center;
 }
 
-.calculator-body {
+.calc-body {
   background: #fff;
   width: 600px;
   height: 600px;
@@ -126,4 +126,11 @@ img {
 
 span {
   color: #000;
+  font-size: 1.25em;
+}
+
+.calc-body button {
+  width: 60px;
+  height: 60px;
+  background: #4c5958;
 }

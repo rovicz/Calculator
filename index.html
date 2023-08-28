@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./src/style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculator</title>
-</head>
+  <body>
+    <!-- Header -->
 
-<body>
-  <!-- Header -->
+    <header class="header">
+      <div class="header-item">
+        <ul>
+          <li><a target="_blank" href="https://github.com/rovicz">Dev →</a></li>
+        </ul>
+      </div>
+    </header>
 
-  <header class="header">
-    <div class="header-item">
-      <ul>
-        <li><a target="_blank" href="https://github.com/rovicz">Dev →</a></li>
-      </ul>
-    </div>
-  </header>
+    <!-- Calculator Body -->
 
-  <!-- Calculator Body -->
+    <section id="calculator">
+      <h2 class="title">Calculator</h2>
 
-  <section id="calculator">
-    <h2 class="title">Calculator</h2>
+      <div class="container calc-body">
+        <form id="form">
+          <p>
+            <input type="number" id="num1" required />
+            <input type="number" id="num2" required />
+          </p>
+          <p>
+            <button id="summ">+</button>
+            <button id="sub">-</button>
+            <button id="multiply">×</button>
+            <button id="divide">÷</button>
+          </p>
+        </form>
+        <span id="result"></span>
+      </div>
+    </section>
 
-    <div class="container calculator-body">
-      <form id="form">
-        <p>
-          <input type="number" id="num1" required>
-          <input type="number" id="num2" required>
-        </p>
-        <p>
-          <button id="summ">summ</button>
-          <button id="sub">substract</button>
-          <button id="multiply">multiply</button>
-          <button id="divide">divide</button>
-        </p>
-      </form>
-      <span id="result"></span>
-    </div>
-  </section>
-
-  <script type="module" src="./dist/main.js"></script>
-</body>
-
+    <script type="module" src="./dist/main.js"></script>
+  </body>
 </html>
