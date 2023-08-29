@@ -1,125 +1,92 @@
-/* Colors */
-
-/* .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-hex { color: #127369; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-hex { color: #10403B; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-hex { color: #8AA6A3; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-hex { color: #4C5958; }
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-hex { color: #BFBFBF; } */
-
-/* Reset */
-
 html {
-  scroll-behavior: smooth;
   box-sizing: border-box;
   height: 100%;
-}
-
-::selection {
-  color: #fff;
-  background: #0029f7;
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #0029f7;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0029f7;
-}
-
-body,
-h1,
-h2,
-h3,
-p,
-ul {
-  padding: 0px;
-  margin: 0px;
-}
-
-body {
-  font-family: Georgia, serif;
-  color: #fff;
-  background: #8aa6a3;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-}
-
-@media (max-width: 739px) {
-  .container {
-    flex-direction: column;
-    max-width: 360px;
-  }
-}
-
-/* Header */
-
-.header {
-  background: #4c5958;
-  padding: 20px;
-  margin-bottom: 60px;
-}
-
-.header-item {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.header-item ul li {
-  text-decoration: none;
-  list-style: none;
-}
-
-.header-item a {
-  box-shadow: inset 0 0 0 0 #fff;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  border-radius: 5px;
-}
-
-.header-item a:hover {
-  box-shadow: inset 100px 0 0 0 #fff;
-  color: #000;
-  border-radius: 5px;
-}
-
-/* Calculator */
-
-.wrapper {
+body {
   align-items: center;
+  background: #4c5958;
+  font-family: sans-serif;
   display: flex;
   font-display: swap;
   height: inherit;
   justify-content: center;
+}
+
+.wrapper {
+  background: #252525;
+  color: #000;
+  border-radius: 10px;
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 40px;
+}
+
+.screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-size: 1.75rem;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 326px;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  height: 65px;
+}
+
+.calc-button:last-child {
+  background: #127369;
+  color: #fff;
+  border: none;
+}
+
+.calc-button:last-child:hover {
+  background-color: #8aa6a3;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: #bfbfbf;
+  border: none;
+}
+
+.calc-button:active {
+  background-color: #4c5958;
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.triple {
+  flex-basis: 73%;
 }
