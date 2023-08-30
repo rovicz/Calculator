@@ -90,3 +90,14 @@ body {
 .triple {
   flex-basis: 73%;
 }
+
+@media (max-width: 739px) {
+  .wrapper {
+    max-width: 340px;
+    padding: 10px 20px;
+  }
+
+  .screen {
+    width: 300px;
+  }
+}
